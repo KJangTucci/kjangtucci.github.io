@@ -5,70 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 6 - Research Limitations</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #f5f5f5;
             padding: 20px;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        .main-content {
+            flex: 1;
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .chapter-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .chapter-list li {
+            margin: 10px 0;
+        }
+        .chapter-link {
+            display: block;
+            padding: 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+        .chapter-link:hover {
+            background-color: #e0e0e0;
+            transform: translateX(5px);
+        }
+        .chapter-number {
+            font-weight: bold;
+            color: #2c3e50;
+            display: block;
+        }
+        .chapter-title {
+            font-size: 1.1em;
+            margin: 5px 0;
+            display: block;
+        }
+        .chapter-description {
+            color: #666;
+            font-size: 0.9em;
+            margin: 5px 0;
+            display: block;
+        }
+        .header {
+            padding: 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
         }
         .chapter-header {
             margin-bottom: 30px;
-        }
-        .chapter-number {
-            font-size: 1.5em;
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-        .chapter-title {
-            font-size: 2em;
-            margin: 0;
-        }
-        .chapter-subtitle {
-            color: #666;
-            margin-top: 5px;
-        }
-        .content-section {
-            margin-bottom: 25px;
         }
         .section-title {
             font-size: 1.3em;
             margin-bottom: 15px;
             color: #2c3e50;
         }
-        .back-link {
-            display: block;
-            margin-top: 30px;
-            color: #333;
-            text-decoration: none;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
-    <div class="chapter-header">
-        <div class="chapter-number">Chapter 6</div>
-        <h1 class="chapter-title">Research Limitations</h1>
-        <p class="chapter-subtitle">Understanding constraints and potential biases</p>
-    </div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="header">
+                <h1>Research Method Introduction</h1>
+                <p class="subtitle">A comprehensive guide to our research methodology</p>
+            </div>
+            <nav>
+                <ul class="chapter-list">
+                    <li><a href="chapter-1.html" class="chapter-link">Chapter 1: Introduction to Research Methodology</a></li>
+                    <li><a href="chapter-2.html" class="chapter-link">Chapter 2: Research Design</a></li>
+                    <li><a href="chapter-3.html" class="chapter-link">Chapter 3: Data Collection Methods</a></li>
+                    <li><a href="chapter-4.html" class="chapter-link">Chapter 4: Data Analysis</a></li>
+                    <li><a href="chapter-5.html" class="chapter-link">Chapter 5: Ethical Considerations</a></li>
+                    <li><a href="chapter-6.html" class="chapter-link">Chapter 6: Research Limitations</a></li>
+                    <li><a href="chapter-7.html" class="chapter-link">Chapter 7: Conclusion and Future Directions</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <div class="chapter-header">
+                <div class="chapter-number">Chapter 6</div>
+                <h1 class="chapter-title">Research Limitations</h1>
+                <p class="chapter-subtitle">Identifying and addressing research constraints</p>
+            </div>
 
-    <div class="content-section">
-        <h2 class="section-title">Common Research Limitations</h2>
-        <p>This section will discuss typical limitations in research studies.</p>
-    </div>
+            <div class="content-section">
+                <h2 class="section-title">Common Research Limitations</h2>
+                <p>This section will discuss typical limitations in research studies.</p>
+            </div>
 
-    <div class="content-section">
-        <h2 class="section-title">Addressing Limitations</h2>
-        <p>This section will provide strategies for mitigating research limitations.</p>
-    </div>
+            <div class="content-section">
+                <h2 class="section-title">Mitigation Strategies</h2>
+                <p>This section will explore ways to minimize research limitations.</p>
+            </div>
 
-    <div class="content-section">
-        <h2 class="section-title">Implications of Limitations</h2>
-        <p>This section will explore how limitations affect research findings.</p>
+            <div class="content-section">
+                <h2 class="section-title">Impact on Results</h2>
+                <p>This section will examine how limitations affect research outcomes.</p>
+            </div>
+        </div>
     </div>
-
-    <a href="index.html" class="back-link">← Back to Chapter List</a>
+    <footer>
+        <p> 2025 Kyoungjin Jang-Tucci. All rights reserved.</p>
+    </footer>
 </body>
 </html>

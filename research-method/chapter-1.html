@@ -5,12 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 1 - Introduction to Research Methodology</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #f5f5f5;
             padding: 20px;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        .main-content {
+            flex: 1;
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .chapter-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .chapter-list li {
+            margin: 10px 0;
+        }
+        .chapter-link {
+            display: block;
+            padding: 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+        .chapter-link:hover {
+            background-color: #e0e0e0;
+            transform: translateX(5px);
+        }
+        .chapter-number {
+            font-weight: bold;
+            color: #2c3e50;
+            display: block;
+        }
+        .chapter-title {
+            font-size: 1.1em;
+            margin: 5px 0;
+            display: block;
+        }
+        .chapter-description {
+            color: #666;
+            font-size: 0.9em;
+            margin: 5px 0;
+            display: block;
+        }
+        .header {
+            padding: 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
         }
         .chapter-header {
             margin-bottom: 30px;
@@ -36,39 +96,52 @@
             margin-bottom: 15px;
             color: #2c3e50;
         }
-        .back-link {
-            display: block;
-            margin-top: 30px;
-            color: #333;
-            text-decoration: none;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
-    <div class="chapter-header">
-        <div class="chapter-number">Chapter 1</div>
-        <h1 class="chapter-title">Introduction to Research Methodology</h1>
-        <p class="chapter-subtitle">Overview of research approaches and foundational concepts</p>
-    </div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="header">
+                <h1>Research Method Introduction</h1>
+                <p class="subtitle">A comprehensive guide to our research methodology</p>
+            </div>
+            <nav>
+                <ul class="chapter-list">
+                    <li><a href="chapter-1.html" class="chapter-link">Chapter 1: Introduction to Research Methodology</a></li>
+                    <li><a href="chapter-2.html" class="chapter-link">Chapter 2: Research Design</a></li>
+                    <li><a href="chapter-3.html" class="chapter-link">Chapter 3: Data Collection Methods</a></li>
+                    <li><a href="chapter-4.html" class="chapter-link">Chapter 4: Data Analysis</a></li>
+                    <li><a href="chapter-5.html" class="chapter-link">Chapter 5: Ethical Considerations</a></li>
+                    <li><a href="chapter-6.html" class="chapter-link">Chapter 6: Research Limitations</a></li>
+                    <li><a href="chapter-7.html" class="chapter-link">Chapter 7: Conclusion and Future Directions</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <div class="chapter-header">
+                <div class="chapter-number">Chapter 1</div>
+                <h1 class="chapter-title">Introduction to Research Methodology</h1>
+                <p class="chapter-subtitle">Overview of research approaches and foundational concepts</p>
+            </div>
 
-    <div class="content-section">
-        <h2 class="section-title">What is Research Methodology?</h2>
-        <p>This section will explain the fundamental concepts of research methodology and its importance in scientific inquiry.</p>
-    </div>
+            <div class="content-section">
+                <h2 class="section-title">What is Research Methodology?</h2>
+                <p>This section will explain the fundamental concepts of research methodology and its importance in scientific inquiry.</p>
+            </div>
 
-    <div class="content-section">
-        <h2 class="section-title">Types of Research</h2>
-        <p>This section will cover different types of research approaches including qualitative, quantitative, and mixed methods.</p>
-    </div>
+            <div class="content-section">
+                <h2 class="section-title">Types of Research</h2>
+                <p>This section will cover different types of research approaches including qualitative, quantitative, and mixed methods.</p>
+            </div>
 
-    <div class="content-section">
-        <h2 class="section-title">Key Concepts</h2>
-        <p>This section will introduce essential concepts such as research questions, hypotheses, and research design.</p>
+            <div class="content-section">
+                <h2 class="section-title">Key Concepts</h2>
+                <p>This section will introduce essential concepts such as research questions, hypotheses, and research design.</p>
+            </div>
+        </div>
     </div>
-
-    <a href="index.html" class="back-link">← Back to Chapter List</a>
+    <footer>
+        <p>© 2025 Kyoungjin Jang-Tucci. All rights reserved.</p>
+    </footer>
 </body>
 </html>

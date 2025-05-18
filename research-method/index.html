@@ -1,107 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Chapter Template</title>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            body {
-                font-family: Arial, sans-serif;
-                line-height: 1.6;
-                font-size: 0.9em;
-            }
-            .container {
-                display: flex;
-                min-height: 100vh;
-            }
-            .sidebar {
-                width: 300px;
-                background-color: #f5f5f5;
-                padding: 20px;
-                height: 100vh;
-                overflow-y: auto;
-                position: fixed;
-                z-index: 1000;
-            }
-            .main-content {
-                flex: 1;
-                margin-left: 300px;
-                padding: 20px;
-            }
-            .chapter-list {
-                list-style-type: none;
-                padding: 0;
-            }
-            .chapter-list li {
-                margin: 5px 0;
-            }
-            .chapter-link {
-                display: block;
-                padding: 8px 12px;
-                border-radius: 5px;
-                text-decoration: none;
-                color: #333;
-                font-size: 0.9em;
-                transition: all 0.3s ease;
-            }
-            .chapter-link:hover {
-                background-color: #e0e0e0;
-                transform: translateX(5px);
-            }
-            .chapter-number {
-                font-weight: bold;
-                color: #2c3e50;
-                display: block;
-                font-size: 0.9em;
-            }
-            .chapter-title {
-                font-size: 0.9em;
-                margin: 5px 0;
-                display: block;
-            }
-            .chapter-description {
-                color: #666;
-                font-size: 0.9em;
-                margin: 5px 0;
-                display: block;
-            }
-            .header {
-                padding: 20px;
-                background-color: #fff;
-                border-bottom: 1px solid #ddd;
-                margin-bottom: 20px;
-            }
-            .chapter-header {
-                margin-bottom: 30px;
-            }
-            .chapter-number {
-                font-size: 1.2em;
-                color: #2c3e50;
-                margin-bottom: 10px;
-            }
-            .chapter-title {
-                font-size: 1.5em;
-                margin: 0;
-            }
-            .chapter-subtitle {
-                color: #666;
-                margin-top: 5px;
-            }
-            .content-section {
-                margin-bottom: 25px;
-            }
-            .section-title {
-                font-size: 1.1em;
-                margin-bottom: 15px;
-                color: #2c3e50;
-            }
-        </style>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter Template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            font-size: 0.9em;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: 300px;
+            background-color: #f5f5f5;
+            padding: 20px;
+            height: 100vh;
+            overflow-y: auto;
+            position: fixed;
+            z-index: 1000;
+        }
+        .main-content {
+            flex: 1;
+            margin-left: 300px;
+            padding: 20px;
+        }
+        .chapter-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .chapter-list li {
+            margin: 5px 0;
+        }
+        .chapter-link {
+            display: block;
+            padding: 8px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+        }
+        .chapter-link:hover {
+            background-color: #e0e0e0;
+            transform: translateX(5px);
+        }
+        .chapter-number {
+            font-weight: bold;
+            color: #2c3e50;
+            display: block;
+            font-size: 0.9em;
+        }
+        .chapter-title {
+            font-size: 0.9em;
+            margin: 5px 0;
+            display: block;
+        }
+        .chapter-description {
+            color: #666;
+            font-size: 0.9em;
+            margin: 5px 0;
+            display: block;
+        }
+        .header {
+            padding: 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        .chapter-header {
+            margin-bottom: 30px;
+        }
+        .chapter-number {
+            font-size: 1.2em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .chapter-title {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .chapter-subtitle {
+            color: #666;
+            margin-top: 5px;
+        }
+        .content-section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+    </style>
+</head>
 <body>
     <div class="container">
         <div class="sidebar">
@@ -111,55 +111,13 @@
             </div>
             <nav>
                 <ul class="chapter-list">
-                    <li>
-                        <a href="chapter-1.html" class="chapter-link">
-                            <span class="chapter-number">Chapter 1:</span>
-                            <span class="chapter-title">Introduction to Research Methodology</span>
-                            <span class="chapter-description">Overview of research approaches and foundational concepts</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="chapter-2.html" class="chapter-link">
-                            <span class="chapter-number">Chapter 2:</span>
-                            <span class="chapter-title">Research Design</span>
-                            <span class="chapter-description">Methodology selection and research framework</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="chapter-3.html" class="chapter-link">
-                            <span class="chapter-number">Chapter 3:</span>
-                            <span class="chapter-title">Data Collection Methods</span>
-                            <span class="chapter-description">Techniques and tools for gathering research data</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="chapter-4.html" class="chapter-link">
-                            <span class="chapter-number">Chapter 4:</span>
-                            <span class="chapter-title">Data Analysis</span>
-                            <span class="chapter-description">Quantitative and qualitative analysis techniques</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="chapter-5.html" class="chapter-link">
-                            <span class="chapter-number">Chapter 5:</span>
-                            <span class="chapter-title">Ethical Considerations</span>
-                            <span class="chapter-description">Research ethics and participant protection</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="chapter-6.html" class="chapter-link">
-                            <span class="chapter-number">Chapter 6:</span>
-                            <span class="chapter-title">Research Limitations</span>
-                            <span class="chapter-description">Understanding constraints and potential biases</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="chapter-7.html" class="chapter-link">
-                            <span class="chapter-number">Chapter 7:</span>
-                            <span class="chapter-title">Conclusion and Future Directions</span>
-                            <span class="chapter-description">Summary and implications for future research</span>
-                        </a>
-                    </li>
+                    <li><a href="chapter-1.html" class="chapter-link">Chapter 1: Introduction to Research Methodology</a></li>
+                    <li><a href="chapter-2.html" class="chapter-link">Chapter 2: Research Design</a></li>
+                    <li><a href="chapter-3.html" class="chapter-link">Chapter 3: Data Collection Methods</a></li>
+                    <li><a href="chapter-4.html" class="chapter-link">Chapter 4: Data Analysis</a></li>
+                    <li><a href="chapter-5.html" class="chapter-link">Chapter 5: Ethical Considerations</a></li>
+                    <li><a href="chapter-6.html" class="chapter-link">Chapter 6: Research Limitations</a></li>
+                    <li><a href="chapter-7.html" class="chapter-link">Chapter 7: Conclusion and Future Directions</a></li>
                 </ul>
             </nav>
         </div>
